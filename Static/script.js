@@ -201,6 +201,8 @@ toggleButtons.forEach(function (button) {
 function submitForm(event) {
     event.preventDefault(); // Prevent the form from submitting traditionally
 
+    const check_value=[]
+    
     // Get user input from the form
     const customerName = document.getElementById("customerName").value;
     const numberOfPeople = document.getElementById("numberOfPeople").value;
@@ -212,7 +214,19 @@ function submitForm(event) {
     emailPattern = /^[a-zA-Z0-9._-]+@gmail\.com$/;
     
     // Check if a room is selected
-    if (selectedRoom) {
+    if (selectedRoom !== undefined && selectedRoom !== null) {
+
+        const room = document.querySelector(".selected-button");
+        const parentdiv = room.parentNode;
+        const pref_dropdown = parentdiv.querySelector(".preferences select");
+        const pref = pref_dropdown.value;
+
+        const addon_check = parentdiv.querySelectorAll(".add-ons input[type='checkbox']")
+
+        addon_check.forEach(function(checkbox){
+            check_value.push(checkbox.checked); 
+        })
+
         const currentDate = new Date();
 
         // Get the current year (4 digits)
@@ -244,7 +258,9 @@ function submitForm(event) {
                             "Number of People": numberOfPeople,
                             "Room Type": selectedRoom,
                             "CheckIn": CheckIn,
-                            "CheckOut": CheckOut
+                            "CheckOut": CheckOut,
+                            "Preferences":pref,
+                            "Add-ons":check_value
                         };
                         const userDataJSON = JSON.stringify(userData);
                         console.log(userDataJSON);
@@ -294,7 +310,8 @@ function submitForm(event) {
         } else {
             alert("Invalid date format. Please use yyyy-mm-dd format.");
         }
-    } else {
+    }
+    else {
         // Handle the case where no room is selected
         alert("Please select a room before submitting.");
     }
