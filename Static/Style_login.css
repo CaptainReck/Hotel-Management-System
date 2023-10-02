@@ -1,0 +1,70 @@
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('assests/bg-img-login_page.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+html{
+    min-height: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    margin: 100px 30%;
+    color: black;
+    background-color: #F2F3EB;
+    filter: opacity(60%);
+}
+
+
+
+#login_form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lab{
+    font-size: 30px;
+    padding-block: 40px;
+}
+
+
+
+.login_form{
+    box-sizing: border-box;
+    align-self:flex-start;
+    padding-inline: 40px;
+    padding-block: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.input{
+    border-radius: 6px;
+    background: transparent;
+}
+
+#login_form button{
+    font-size: 15px;
+    margin-block: 10px;
+    border-radius: 6px;
+}
+
+.login_form button[type="submit"]:hover {
+    background-color: #ccc; /* Change the background color to a shade of gray */
+    opacity: 0.8; /* Reduce opacity to make it opaque */
+    color: white; /* Change text color to white for better visibility */
+}

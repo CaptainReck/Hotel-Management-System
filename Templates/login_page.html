@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login_style.css') }}">
+    
+    <script src="https://kit.fontawesome.com/6143d1d252.js" crossorigin="anonymous"></script>
+    <title>Hotel Management</title>
+</head>
+<body>
+    <div class="login-container">
+        <form action="" id="login_form">
+            <h1>Login</h1>
+            <div class="input-container">
+                <input type="text" placeholder="Email Address" name="email">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Password" name="password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div>
+                <button type="submit">Login</button>
+            </div>
+            <div id="message">
+                <p id="work"></p>
+            </div>
+        </form>
+    </div>
+    <script src="../static/login-script.js"></script>
+</body>
+</html>
+
+<!-- <label class="lab" for="email_address">Email Address</label>
+                <input type="text" name="email" class="input" id="email" required>
+
+                <label class="lab" for="password">Password</label>
+                <input type="password" name="password" class="input" id="password" required> -->

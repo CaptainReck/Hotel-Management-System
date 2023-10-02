@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://kit.fontawesome.com/6143d1d252.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://storage.googleapis.com/studio-design-asset-files/projects/AXq1lE0GO7/s-25x25_4eb63a71-0b02-409e-b2c7-f4d7e494384e.svg" alt="" id="logo">
+            <p id="name">Radiant Horizon</p>
+        </div>
+        <div class="customer-info">
+            
+            <a href="/customer_info" id="info-link">Customer Info</a>
+        </div>
+        <div class="links">
+            <a class="nav-links"  href="#" data-target="about">About</a>
+            <a class="nav-links"  href="#" data-target="rooms">Rooms</a>
+            <a class="nav-links"  href="#" data-target="services">Services</a>
+            <a class="nav-links"  href="#" data-target="gallery">Gallery</a>
+            <a class="nav-links"  href="#" data-target="things">Things</a>
+            <a class="nav-links"  href="#" data-target="contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="home section">
+        <h1>RADIANT HORIZON</h1>
+        <!--icon-->
+        <img src="https://thehoughtonhotel.com/wp-content/uploads/2023/02/Houghton-Hotel-3-20-scaled.jpg" alt="">
+    </div>
+
+    <div class="about section" id="about">
+        <h2 class="heading">About</h2>
+        <p id="about_para">Radiant Horizon is a luxurious hotel nestled in the picturesque hills of Darjeeling, India. With a stunning view of the majestic Kanchenjunga mountain range, our hotel offers a perfect blend of comfort and natural beauty. Whether you're a nature enthusiast, a relaxation seeker, or simply looking for a peaceful escape, Radiant Horizon is your ideal destination. Our elegant accommodations, world-class amenities, and warm hospitality ensure a memorable stay amidst the serene beauty of Darjeeling</p>
+    </div>
+
+    <div class="rooms section" id="rooms">
+        <h2 id="chooseRoom">Choose Room Type</h2>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Executive suite</h2>
+                <p class="info-desc">For travelers seeking a blend of business and leisure, our Executive Room is the ideal choice. These rooms are equipped with a dedicated workspace, ensuring you can stay productive while enjoying the serenity of Darjeeling. After work, relax in the well-appointed surroundings and soak in the scenic vistas.</p>
+                <p class="price">Price: ₹20,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive Premium Wi-Fi</li>
+                        <li class="amenity-item ">140 Sq Mt</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item hidden">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden">Living room with powder room</li>
+                        <li class="amenity-item hidden">Private terrace</li>
+                        <li class="amenity-item hidden">Private pool</li>
+                        <li class="amenity-item hidden">Free Spa</li>
+                        
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Executive suite"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Premier Suite</h2>
+                <p class="info-desc">The Premier Suite at Radiant Horizon is a haven of opulence. This spacious and tastefully decorated suite is perfect for those who desire the utmost in comfort and privacy. You'll have a separate living area, a luxurious bedroom, and panoramic views of the breathtaking surroundings.</p>
+                <p class="price">Price: ₹16,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive Premium Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service
+                            Living room with dining area, bedroom & bathroom</li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            
+            <div class="room-img">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Premier suite"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Deluxe Room</h2>
+                <p class="info-desc">Upgrade your stay with our Deluxe Room, designed for those who seek a bit more space and luxury. These rooms are elegantly furnished, offering a relaxing atmosphere with scenic views of the Kanchenjunga. Sink into plush bedding and unwind in style.
+                </p>
+                <p class="price">Price: ₹14,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive basic Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Tea-coffee maker</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item hidden">Iron & ironing board</li>
+                        <li class="amenity-item hidden">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">Premium Wi-Fi at nominal charge.</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                        <li class="amenity-item hidden"></li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="Deluxe room"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room-selector">
+            <div class="room-info">
+                <h2>Standard Room</h2>
+                <p class="info-desc">The Standard Room at Radiant Horizon offers a cozy and comfortable retreat. It's perfect for solo travelers or couples looking for a peaceful haven. Enjoy a restful night's sleep in a well-appointed room featuring modern amenities and a touch of traditional charm.</p>
+                <p class="price">Price: ₹10,000 per night</p>
+                <div class="amenities-section">
+                    <h3>Amenities:</h3>
+                    <ul class="amenities-list">
+                        <li class="amenity-item">Inclusive basic Wi-Fi</li>
+                        <li class="amenity-item">TV</li>
+                        <li class="amenity-item">Air Conditioning</li>
+                        <li class="amenity-item">Electronic safe</li>
+                        <li class="amenity-item ">Daily housekeeping & turndown service</li>
+                        <li class="amenity-item hidden">Premium Wi-Fi at nominal charge.</li>
+                        <li class="amenity-item hidden">BathTub</li>
+                    </ul>
+                </div>
+                <button class="toggle-amenities-btn">Read More</button>
+            </div>
+            <div class="room-img">
+                <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aG90ZWwlMjByb29tfGVufDB8fDB8fHww&w=1000&q=80" alt="Room Image">
+            </div>
+            <div class="room-select">
+                <button class="room-btn" data-room="standard room"></button>
+                <div class="preferences hidden_room">
+                    <label for="dropdown">Preferences:</label>
+                    <select id="dropdown">
+                        <option value="None">None</option>
+                        <option value="Smoking">Smoking</option>
+                        <option value="Honeymoon">Romantic</option>
+                        <option value="Pet">Pet-Friendly</option>
+                    </select>
+                </div>
+                <div class="add-ons hidden_room">
+                    <div class="add-on-item">
+                        <label for="bed">Extra Bed</label>
+                        <input type="checkbox" id="bed" name="addons" value="bed">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="gym">Gym Access</label>
+                        <input type="checkbox" id="gym" name="addons" value="gym">
+                    </div>
+                    <div class="add-on-item">
+                        <label for="bar">Mini Bar</label>
+                        <input type="checkbox" id="bar" name="addons" value="bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user-info">
+            <h2>Provide Your Information</h2>
+            <form id="userInfoForm" onsubmit="submitForm(event);" action="/protected-page">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" required><br>
+
+                <label for="customerPhoneNumber">Phone Number:</label>
+                <input type="tel" id="customerPhoneNumber" pattern="[0-9]{10,}" required><br>
+
+                <label for="customerEmail">Email:</label>
+                <input type="email" id="customerEmail" required><br>
+
+                <label for="numberOfPeople">Number of Guests: <span>(Maximum and Minimumn Number of Guests are 4 and 1)</span></label>
+                <input type="number" id="numberOfPeople" min="1" max="4" required><br>
+
+                <label for="CheckIn">CheckIn Date:</label>
+                <input type="date" id="CheckIn" required><br>
+
+                <label for="CheckOut">CheckOut Date:</label>
+                <input type="date" id="CheckOut" required><br>
+
+                
+                <input type="submit" value="Submit Booking">
+            </form>
+            <div id="RoomStatus"></div>
+        </div>
+    </div>
+
+    <div class="services section" id="services">
+        <h2 class="heading" id="serv-head2">Services</h2>
+        <div class="serv-container">
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Seamless Connectivity:</h3>
+                <p>Stay connected with complimentary high-speed Wi-Fi available throughout the hotel, ensuring you're always in touch with loved ones or business associates.</p>
+            </div>
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Concierge Excellence:</h3>
+                <p>Our dedicated concierge team is available 24/7 to assist with reservations, transportation, and local recommendations. Let us take care of the details while you focus on enjoying your stay.</p>
+            </div>
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Pool</h3>
+                <p>Take a dip in our Outdoor swimming pool, surrounded by lush greenery and comfortable loungers. It's the perfect spot for soaking up the sun or unwinding after a busy day.</p>
+            </div>
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Fitness & Wellness</h3>
+                <p>Stay active in our modern fitness center equipped with state-of-the-art equipment. For a more relaxing experience, visit our Tranquil Haven Spa for rejuvenating treatments and massages.</p>
+            </div>
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Pet Friendly Comfort</h3>
+                <p>At Radian Horizon, we understand that pets are part of the family. That's why we offer pet-friendly rooms designed to provide your four-legged companions with a comfortable and enjoyable stay.</p>
+            </div>
+            <div class="serv">
+                <!--icon-->
+                <h3 id="serv-head3">Luxurious Accomdation</h3>
+                <p>Immerse yourself in the lap of luxury with our meticulously designed rooms and suites. From modern furnishings to plush bedding, we've thought of every detail to ensure your comfort and relaxation.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery section" id="gallery">
+        <h2 class="heading">Gallery</h2>
+        <div class="carousel">
+            <button class="carousel-btn next">&#x2192</button>
+            <div class="carousel-container">
+                <ul class="carousel-track">
+                    <li class="slides currentSlide">
+                        <img class="carousel-images" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/gallery-new/Lobby-Taj-Palace_New-Delhi-3.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Image 1</h3>
+                            <p>Description of Image 1</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/gallery-new/Lobby-Taj-Palace-New-Delhi-1.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Image 2</h3>
+                            <p>Description of Image 2</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/new-images-2021/3b.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Image 3</h3>
+                            <p>Description of Image 3</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/new-images-2021/4b.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Image 4</h3>
+                            <p>Description of Image 4</p>
+                        </div>
+                    </li>
+                    <li class="slides">
+                        <img class="carousel-images" src="https://www.tajhotels.com/content/dam/luxury/hotels/taj-palace-delhi/images/gallery-new/4.jpg/jcr:content/renditions/cq5dam.web.756.756.jpeg" alt="">
+                        <div class="slide-text">
+                            <h3>Image 5</h3>
+                            <p>Description of Image 5</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel-btn prev is-hidden">&#x2190</button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator currentSlide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="things section" id="things">
+        <h2 class="heading" id="things-top">Things To Do</h2>
+        <div class="things-container"> 
+
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+            <div class="explore">
+                <h3 class="things-head">Lorem, ipsum dolor.</h3>
+                <p class="things-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur magni vel dolorem suscipit cum perspiciatis atque, officiis nam, tempore, ad ipsum porro! Qui.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact section" id="contact">
+        <div class="contact-container">
+            <!-- Existing content -->
+    
+            <!-- Social Media Links -->
+            <div class="contact-elem social-media">
+                <h3>Connect With Us</h3>
+                <a href="https://www.facebook.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                </a>
+                <a href="https://www.instagram.com" class="contact-link" target="_blank">
+                    <button class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</button>
+                </a>
+                <!-- Add more social media links as needed -->
+            </div>
+    
+            <!-- Business Hours -->
+            <div class="contact-elem business-hours">
+                <h3>Business Hours</h3>
+                <p>Monday - Friday: 8:00 AM - 10:00 PM</p>
+                <p>Saturday - Sunday: 9:00 AM - 9:00 PM</p>
+                <!-- Adjust the hours as per your hotel's schedule -->
+            </div>
+    
+            <!-- Additional Contact Information -->
+            <div class="contact-elem additional-info">
+                <h3>Additional Contact Information</h3>
+                <p>Email: info@examplehotel.com</p>
+                <p>Phone Number: +1 (123) 456-7890</p>
+                <p>Address: 123 Main Street, City, Country</p>
+                <!-- Include any other relevant contact details -->
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

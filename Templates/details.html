@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Records</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='details_style.css') }}"> <!-- Link to CSS file -->
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://storage.googleapis.com/studio-design-asset-files/projects/AXq1lE0GO7/s-25x25_4eb63a71-0b02-409e-b2c7-f4d7e494384e.svg" alt="" id="logo">
+            <p id="name">Radiant Horizon</p>
+        </div>
+        <div class="links">
+            <a href="/protected-page">Home Page</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Customer Details</h1>
+        <div class="table-container"><table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Room Number</th>
+                    <th>Room Type</th>
+                    <th>Check-In</th>
+                    <th>Check-Out</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in data %}
+                <tr>
+                    <td>{{ entry["name"] }}</td>
+                    <td>{{ entry["phone"] }}</td>
+                    <td>{{ entry["email"] }}</td>
+                    <td>{{ entry["room_no"] }}</td>
+                    <td>{{ entry["room_type"] }}</td>
+                    <td>{{ entry["check_in"] }}</td>
+                    <td>
+                        {% if entry["check_out"] == "--" %}
+                            <button class="checkout-button">Checkout</button>
+                        {% else %}
+                            {{ entry["check_out"] }}
+                        {% endif %}
+                    </td>
+                    <td>{{ entry["amount"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id="payement">
+        <h2>Payement</h2>
+        
+    </div>
+        
+    </main>
+    <script src="{{ url_for('static', filename='details_script.js') }}"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

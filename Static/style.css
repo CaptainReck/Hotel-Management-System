@@ -1,0 +1,715 @@
+@font-face {
+    font-family: 'Vision'; 
+    src: url('fonts/Vision.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Vision-Bold'; 
+    src: url('fonts/Vision-Bold.otf') format('opentype'); 
+}
+
+#info-link{
+    background-color: #101010;
+    color: #F7F2FD;
+    border: 0;
+    font-size: 16px;
+    font-family: 'Vision';
+    cursor: pointer;
+    width: 100%;
+    text-align: end;
+    align-self: center;
+    text-decoration: none;
+}
+
+.customer-info{
+    display: flex;
+    flex-grow: 1;
+}
+
+
+
+
+.home {
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.about{
+    padding-block: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(16, 16, 16);
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding for spacing */
+    margin: 10px; /* Add margin to create space from edges */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 10px; /* Rounded corners */
+    filter: grayscale(20%); /* Grayscale filter (adjust as needed) */
+    /* OR */
+    /* filter: sepia(20%); */
+}
+
+.home h1 {
+    font-family: 'Your Modern Font', sans-serif; /* Replace 'Your Modern Font' with your chosen font */
+    /* Add other font-related styles as needed */
+}
+
+.home .image-overlay {
+    position: relative;
+}
+
+.home .image-overlay img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home .image-overlay p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#name {
+    color: #F7F2FD; /* Text color */
+    font-size: 36px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Letter spacing */
+    margin: 0; /* Remove any default margin */
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px; /* Added spacing between logo and name */
+}
+
+.home img {
+    max-width: 90%; /* Ensure the image doesn't exceed its container's width */
+    height: auto; /* Maintain the aspect ratio and prevent distortion */
+    /* Add any additional styling you need */
+}
+
+
+#name {
+    color: #F7F2FD;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+body{
+    background-color: #F2F3EB;
+    font-family: "Vision";
+    margin: 0;
+    color: #F2F3EB;
+}
+
+
+h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#about_para{
+    margin-block: 30px;
+    color: rgb(16,16,16);
+    max-width:70%;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+
+
+.section{
+    margin-block: 30px;
+}
+
+.heading{
+    text-align: center;
+    color: rgb(16,16,16);
+    font-size: 40px;
+}
+
+/* Style the Services section */
+.services {
+    background-color: #F2F3EB; /* Set background color for the entire section */
+    padding: 30px;
+    text-align: center;
+}
+
+/* Create a container for the service tokens */
+.serv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style each service token */
+.serv {
+    background-color: #101010; /* Background color for service tokens */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: calc(33.33% - 20px); /* Distribute them evenly in a row with spacing */
+    transition: transform 0.2s;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
+
+.serv:hover {
+    transform: scale(1.05);
+}
+
+/* Style the service headings */
+#serv-head2 {
+    font-size: 40px;
+    color: #101010; /* Text color for service headings */
+}
+
+/* Style the service titles */
+#serv-head3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #e1a8c5; /* Text color for service titles */
+}
+
+/* Style the service descriptions */
+.serv p {
+    font-size: 16px;
+    color: #F2F3EB; /* Text color for service descriptions */
+}
+
+.carousel{
+    position: relative;
+    height: 600px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.carousel-images{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-container{
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #101010;
+}
+
+.carousel-track{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 100%;
+    position: relative;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slides{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.carousel-btn{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.prev{
+    left: -40px
+}
+
+.next{
+    z-index: 1;
+    right: -40px;
+}
+
+.carousel-nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel-indicator{
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(16,16,16);
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    backface-visibility: hidden;
+}
+
+.carousel-indicator.currentSlide{
+    background: #e1a8c5;
+}
+
+.is-hidden{display: none;}
+
+/* Style for the text container */
+.slide-text {
+    width: 300px;
+    position: absolute;
+    bottom: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+    color: #fff; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    padding: 10px; /* Padding around text */
+    border-radius: 5px; /* Rounded corners for the text container */
+    max-width: 300px; /* Limit the width of the text container */
+}
+
+/* Style for the heading and description */
+.slide-text h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.slide-text p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Style the Things to Do section with the Black and Gold color theme */
+.things {
+    background-color: #F2F3EB; /* Background color for the section */
+    padding: 30px; /* Add padding for spacing */
+}
+
+/* Style individual "explore" elements */
+.explore {
+    background-color: #000; /* Black background color for each "explore" box */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding for spacing within each box */
+    margin: 20px; /* Add margin for spacing between boxes */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    transition: transform 0.2s; /* Add a subtle hover effect */
+}
+
+.explore:hover {
+    transform: scale(1.05); /* Enlarge the box on hover */
+}
+
+/* Style the "Things to Do" headings with the Black and Gold color theme */
+#things-top {
+    font-size: 24px; /* Increase font size for the section heading */
+    color: #000; /* Black text color for the heading */
+    text-align: center; /* Center-align the heading */
+}
+
+/* Style the "explore" headings with the Black and Gold color theme */
+.things-head {
+    font-size: 20px; /* Set font size for the headings */
+    font-weight: bold; /* Add bold font weight */
+    color: #e1a8c5; /* Gold text color for the headings */
+}
+
+/* Style the "explore" descriptions with the Black and Gold color theme */
+.things-desc {
+    font-size: 16px; /* Set font size for the descriptions */
+    color: #F2F3EB; /* Text color for the descriptions */
+}
+
+
+.contact{
+    background-color: rgb(16,16,16);
+    height: 500px;
+    margin-inline: 220px;
+    margin-bottom: 70px;
+    border-radius: 8px;   
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.contact-elem{
+    margin: 20px 10px;
+    width: 50%;
+}
+
+.find{
+    border-right: 1px solid #F2F3EB;
+}
+
+.nav-links{
+    color: #F7F2FD;
+    text-decoration: none;
+    align-self: center;
+}
+
+.links{
+    position: relative;
+    right: 0px;
+    padding-left: 10px;
+    display: inline-flex;
+    height: 100%;
+    align-self: center;
+    gap: 10px;
+    background-color: rgb(16,16,16);
+}
+
+.contact-links{
+    background-color: rgb(16,16,16);
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.terms{
+    position: relative;
+    bottom: 0;
+}
+
+#corp{
+    color: #848583;
+}
+
+.location{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.gallery{
+    padding-block: 5px;
+}
+
+h1{
+    color: rgb(16,16,16);
+}
+
+.find-links{
+    font-size: 50px;
+    color: white;
+    background-color: rgb(16,16,16);
+    border: 0;
+}
+
+.social-link{
+    color: #F2F3EB;
+    background-color:rgb(16, 16, 16) ;
+    text-decoration: none;
+    font-size: 28px;
+    border: none;
+    margin-block: 10px;
+    cursor: pointer;
+}
+
+.contact-link{
+    text-decoration: none;
+}
+
+.contact-elem>h3{
+    font-size: 30px;
+}
+
+
+/* styling for the rooms sections */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.room-selector {
+    background-color: #F2F3EB;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.2);
+}
+
+.room-info {
+    color: #101010;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-inline: 10px; /* Add padding to the right to prevent overlapping with the image */
+}
+
+.room-info h2 {
+    margin-bottom: 10px;
+}
+
+#chooseRoom{
+    text-align: center;
+    font-size: 40px;
+    color: #101010;    
+}
+
+.room-img {
+    flex: 0.5; /* Reduce the flex value to give less space to the image */
+    display: flex;
+    justify-content: flex-end; /* Shift the image to the right */
+    align-items: center;
+    padding-right: 10px; /* Add some spacing between the image and select button */
+}
+
+.room-img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 3px solid #F2F3EB;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.room-img img:hover {
+    transform: scale(1.05);
+}
+
+.room-select {
+    flex: 0.3; /* Reduce the flex value to give less space to the select button */
+    text-align: center;
+    display: flex; /* Use flex to center the button horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.preferences{
+    margin: 20px 10px 0px 0px;
+    color: #101010;
+}
+
+.preferences select{
+    margin: 8px auto;
+    font-family: "Vision";
+    border-radius: 4px;
+    border: none;
+}
+
+.add-ons {
+    color: #101010;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+}
+
+.add-on-item {
+    display: flex;
+    justify-content: space-between; /* Place label at left and input at right */
+    margin-bottom: 10px; /* Add spacing between items */
+    align-items: center; /* Vertically center the content */
+}
+
+label {
+    flex: 1; /* Allow label to take available space */
+}
+
+input[type="checkbox"] {
+    margin-left: 10px; /* Add spacing between label and checkbox */
+}
+
+
+.room-btn {
+    width: 26px; /* Set a fixed width and height to create a circular shape */
+    height: 26px;
+    padding: 0; /* Remove padding to eliminate extra spacing */
+    border-radius: 50%; /* Make it circular by setting border-radius to 50% */
+    background-color: #00c26b; /* Background color for the circular button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition on hover */
+    display: flex; /* Center the content horizontally and vertically */
+    justify-content: center;
+    border: 0;
+    align-items: center;
+    margin: 10px;
+}
+
+.room-btn.selected-button::before {
+    content: ''; /* Add empty content to create the dot appearance */
+    display: block;
+    width: 12px; /* Adjust the dot size as needed */
+    height: 12px;
+    background-color: #fff; /* Dot color */
+    border-radius: 50%; /* Make the dot circular */
+}
+
+.room-btn:hover {
+    background-color: #009655; /* Button background color on hover */
+}
+
+.hidden_room{
+    display: none;
+}
+
+
+
+.amenities-list {
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display items in a row */
+    flex-wrap: wrap; /* Wrap items to the next line if needed */
+    list-style-position: inside; /* Keep the bullet points inside the list items */
+}
+
+.amenities-list li {
+    font-size: 14px; /* Adjust the font size as needed */
+    margin-right: 5px; /* Decrease the spacing between list items */
+}
+
+.hidden{
+    display: none;
+}
+
+.toggle-amenities-btn {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Text color */
+    padding: 8px 16px; /* Padding around the text */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.toggle-amenities-btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+
+/* for the user details */
+/* Style the user information form */
+.user-info {
+    background-color: transparent; /* Set background color to transparent */
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.user-info h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.user-info label {
+    font-size: 14px;
+    color: #666;
+    display: block;
+    margin-bottom: 5px;
+}
+/* Existing styles for input fields */
+.user-info input[type="text"],
+.user-info input[type="date"],
+.user-info input[type="number"],
+.user-info input[type="tel"],
+.user-info input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none; /* Remove border */
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f7f7f7; /* Background color for input fields */
+    border: 1px solid #ccc; 
+}
+
+.user-info input[type="text"]:focus,
+.user-info input[type="date"]:focus,
+.user-info input[type="number"]:focus,
+.user-info input[type="tel"]:focus,
+.user-info input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+
+
+
+.user-info input[type="submit"] {
+    background-color: #e1a8c5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.user-info input[type="submit"]:hover {
+    background-color: #e667a8;
+}
+  
+.selected-button {
+    background-color: #00c26b; /* New background color when selected */
+    color: #fff; /* Text color */
+}
+
+label span{
+    color: rgb(102, 102, 102,0.5);
+}
+
+#RoomStatus{
+    margin: 10px 0px;
+    color: #101010;
+    font-size: 20px;
+    font-weight: 300;
+}
+
